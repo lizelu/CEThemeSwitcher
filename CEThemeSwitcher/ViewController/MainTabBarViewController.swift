@@ -12,7 +12,17 @@ class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewControllers = [FirstViewController(), SecondItemViewController()];
+        let first = FirstViewController()
+        first.tabBarItem = createItemBar(title: "first", tag: 0)
+        
+        let second = SecondItemViewController()
+        second.tabBarItem = createItemBar(title: "second", tag: 0)
+        self.viewControllers = [first, second];
+    }
+    
+    private func createItemBar(title: String, tag: Int) -> UITabBarItem {
+        let item = UITabBarItem(title: title, image: nil, tag: tag)
+        return item
     }
 
     override func didReceiveMemoryWarning() {
