@@ -9,7 +9,7 @@ import UIKit
 class Theme1: ThemeProtocol {
     var backgroundColor: UIColor {
         get {
-            return UIColor.lightGray
+            return UIColor.white
         }
     }
     

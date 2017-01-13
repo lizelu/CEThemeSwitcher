@@ -12,12 +12,12 @@ class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let first = FirstViewController()
-        first.tabBarItem = createItemBar(title: "first", tag: 0)
+        let nav1 = UINavigationController(rootViewController: FirstViewController())
+        nav1.tabBarItem = createItemBar(title: "first", tag: 0)
         
         let second = SecondViewController()
         second.tabBarItem = createItemBar(title: "second", tag: 0)
-        self.viewControllers = [first, second];
+        self.setViewControllers([nav1, second], animated: true)
     }
     
     private func createItemBar(title: String, tag: Int) -> UITabBarItem {

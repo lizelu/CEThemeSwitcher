@@ -22,28 +22,30 @@ enum ThemeType {
         }
     }
 }
-typealias UpdateThemeClosure = (ThemeProtocol) -> Void
-class ThemeManager: NSObject {
-//    var backgroundColor: UIColor {
-//        get {
-//            return theme.backgroundColor
-//        }
-//    }
-//    
-//    var titleTextColor: UIColor {
-//        get {
-//            return theme.titleTextColor
-//        }
-//    }
-//    
-//    var detailTextColor: UIColor {
-//        get {
-//            return theme.detailTextColor
-//        }
-//    }
+let ThemeNotifacationName = NSNotification.Name("keyThemeNotifacation")
 
-    var updateTheme: UpdateThemeClosure!
+class ThemeManager: NSObject {
+    var backgroundColor: UIColor {
+        get {
+            return theme.backgroundColor
+        }
+    }
+    
+    var titleTextColor: UIColor {
+        get {
+            return theme.titleTextColor
+        }
+    }
+    
+    var detailTextColor: UIColor {
+        get {
+            return theme.detailTextColor
+        }
+    }
     var theme: ThemeProtocol = Theme1()     //默认是Theme1
+    
+    var notification: NSNotification!
+    
     
     static var manager: ThemeManager? = nil
     static func shareInstance() -> ThemeManager {
@@ -52,24 +54,19 @@ class ThemeManager: NSObject {
         }
         return manager!
     }
-    private override init() {}
-    
-    private func setUpdateTheme(updateClosure: @escaping UpdateThemeClosure) {
-        self.updateTheme = updateClosure
+    private override init() {
     }
     
     private func switcherTheme(type: ThemeType){
         self.theme = type.theme
-        if self.updateTheme != nil {
-            self.updateTheme(type.theme)
-        }
-    }
-    
-    static func setUpdateTheme(updateClosure: @escaping UpdateThemeClosure) {
-       ThemeManager.shareInstance().setUpdateTheme(updateClosure: updateClosure)
+        NotificationCenter.default.post(name: ThemeNotifacationName, object: self.theme)
     }
     
     static func switcherTheme(type: ThemeType){
         ThemeManager.shareInstance().switcherTheme(type: type)
+    }
+    
+    static func themeUpdate() {
+        NotificationCenter.default.post(name: ThemeNotifacationName, object: ThemeManager.shareInstance().theme)
     }
 }

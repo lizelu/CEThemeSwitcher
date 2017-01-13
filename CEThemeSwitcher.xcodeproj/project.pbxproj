@@ -10,6 +10,12 @@
 		F44311DB1E28AD9B00F53935 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DA1E28AD9B00F53935 /* ThemeProtocol.swift */; };
 		F44311DD1E28B07400F53935 /* Theme1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DC1E28B07400F53935 /* Theme1.swift */; };
 		F44311DF1E28B08500F53935 /* Theme2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DE1E28B08500F53935 /* Theme2.swift */; };
+		F44311E21E28B79500F53935 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E11E28B79500F53935 /* TitleLabel.swift */; };
+		F44311E41E28B7B100F53935 /* DetailLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E31E28B7B100F53935 /* DetailLable.swift */; };
+		F44311E61E28B8F000F53935 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E51E28B8F000F53935 /* SubView.swift */; };
+		F44311E81E28C71800F53935 /* FirstSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E71E28C71800F53935 /* FirstSubViewController.swift */; };
+		F44311EA1E28DCF700F53935 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E91E28DCF700F53935 /* SuperViewController.swift */; };
+		F44311EC1E28DD9C00F53935 /* SuperLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311EB1E28DD9C00F53935 /* SuperLabel.swift */; };
 		F45328B41E2788A1006F7C68 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B31E2788A1006F7C68 /* FirstViewController.swift */; };
 		F45328B61E2788DC006F7C68 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B51E2788DC006F7C68 /* SecondViewController.swift */; };
 		F45328B81E2789B0006F7C68 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */; };
@@ -23,6 +29,12 @@
 		F44311DA1E28AD9B00F53935 /* ThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		F44311DC1E28B07400F53935 /* Theme1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme1.swift; sourceTree = "<group>"; };
 		F44311DE1E28B08500F53935 /* Theme2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme2.swift; sourceTree = "<group>"; };
+		F44311E11E28B79500F53935 /* TitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		F44311E31E28B7B100F53935 /* DetailLable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailLable.swift; sourceTree = "<group>"; };
+		F44311E51E28B8F000F53935 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		F44311E71E28C71800F53935 /* FirstSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSubViewController.swift; sourceTree = "<group>"; };
+		F44311E91E28DCF700F53935 /* SuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		F44311EB1E28DD9C00F53935 /* SuperLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperLabel.swift; sourceTree = "<group>"; };
 		F45328B31E2788A1006F7C68 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F45328B51E2788DC006F7C68 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44311E01E28B77300F53935 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F44311EB1E28DD9C00F53935 /* SuperLabel.swift */,
+				F44311E11E28B79500F53935 /* TitleLabel.swift */,
+				F44311E31E28B7B100F53935 /* DetailLable.swift */,
+				F44311E51E28B8F000F53935 /* SubView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F45328B01E27869B006F7C68 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +90,9 @@
 		F45328B21E2788A1006F7C68 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F44311E91E28DCF700F53935 /* SuperViewController.swift */,
 				F45328B31E2788A1006F7C68 /* FirstViewController.swift */,
+				F44311E71E28C71800F53935 /* FirstSubViewController.swift */,
 				F45328B51E2788DC006F7C68 /* SecondViewController.swift */,
 				F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */,
 			);
@@ -93,6 +118,7 @@
 		F47004A51E27833000EB5AA5 /* CEThemeSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				F44311E01E28B77300F53935 /* View */,
 				F45328B21E2788A1006F7C68 /* ViewController */,
 				F45328B01E27869B006F7C68 /* Theme */,
 				F45328B11E27869B006F7C68 /* ThemeManager */,
@@ -177,12 +203,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45328B41E2788A1006F7C68 /* FirstViewController.swift in Sources */,
+				F44311EA1E28DCF700F53935 /* SuperViewController.swift in Sources */,
 				F44311DD1E28B07400F53935 /* Theme1.swift in Sources */,
 				F45328B81E2789B0006F7C68 /* MainTabBarViewController.swift in Sources */,
+				F44311E41E28B7B100F53935 /* DetailLable.swift in Sources */,
 				F45328BC1E279139006F7C68 /* ThemeManager.swift in Sources */,
+				F44311EC1E28DD9C00F53935 /* SuperLabel.swift in Sources */,
 				F44311DF1E28B08500F53935 /* Theme2.swift in Sources */,
 				F44311DB1E28AD9B00F53935 /* ThemeProtocol.swift in Sources */,
+				F44311E21E28B79500F53935 /* TitleLabel.swift in Sources */,
+				F44311E81E28C71800F53935 /* FirstSubViewController.swift in Sources */,
 				F47004A71E27833000EB5AA5 /* AppDelegate.swift in Sources */,
+				F44311E61E28B8F000F53935 /* SubView.swift in Sources */,
 				F45328B61E2788DC006F7C68 /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
