@@ -22,7 +22,7 @@ enum ThemeType {
         }
     }
 }
-
+typealias UpdateThemeClosure = (ThemeProtocol) -> Void
 class ThemeManager: NSObject {
 //    var backgroundColor: UIColor {
 //        get {
@@ -42,6 +42,7 @@ class ThemeManager: NSObject {
 //        }
 //    }
 
+    var updateTheme: UpdateThemeClosure!
     var theme: ThemeProtocol = Theme1()     //默认是Theme1
     
     static var manager: ThemeManager? = nil
@@ -53,7 +54,22 @@ class ThemeManager: NSObject {
     }
     private override init() {}
     
-    func switcherTheme(type: ThemeType){
+    private func setUpdateTheme(updateClosure: @escaping UpdateThemeClosure) {
+        self.updateTheme = updateClosure
+    }
+    
+    private func switcherTheme(type: ThemeType){
         self.theme = type.theme
+        if self.updateTheme != nil {
+            self.updateTheme(type.theme)
+        }
+    }
+    
+    static func setUpdateTheme(updateClosure: @escaping UpdateThemeClosure) {
+       ThemeManager.shareInstance().setUpdateTheme(updateClosure: updateClosure)
+    }
+    
+    static func switcherTheme(type: ThemeType){
+        ThemeManager.shareInstance().switcherTheme(type: type)
     }
 }

@@ -15,7 +15,7 @@ class MainTabBarViewController: UITabBarController {
         let first = FirstViewController()
         first.tabBarItem = createItemBar(title: "first", tag: 0)
         
-        let second = SecondItemViewController()
+        let second = SecondViewController()
         second.tabBarItem = createItemBar(title: "second", tag: 0)
         self.viewControllers = [first, second];
     }
