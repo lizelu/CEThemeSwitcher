@@ -16,6 +16,7 @@ class SecondViewController: SuperViewController, UITableViewDelegate, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "选择主题"
         self.addTableVew()
     }
     
@@ -30,6 +31,17 @@ class SecondViewController: SuperViewController, UITableViewDelegate, UITableVie
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func handelNotification(notification: NSNotification) {
+        guard let theme = notification.object as? ThemeProtocol else {
+            return
+        }
+        if self.tableView != nil {
+            self.tableView.backgroundColor = theme.backgroundColor
+        }
+    }
+
+    
     
     //MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,19 +72,10 @@ class SecondViewController: SuperViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectIndexRow = indexPath.row
         self.tableView.reloadData()
     }
     
-    
-    func tapSwicher(switcher: UISwitch) {
-        if switcher.isOn {
-            ThemeManager.switcherTheme(type: .THEME1)
-        } else {
-            ThemeManager.switcherTheme(type: .THEME2)
-        }
-    }
-
-
 }

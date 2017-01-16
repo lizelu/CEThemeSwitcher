@@ -12,7 +12,7 @@ class FirstSubViewController: SuperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "子页面"
         let subViews = SubView(frame: CGRect(x: 80, y: 80, width: 200, height: 50))
         subViews.titleLabel.text = "第一个页面的子页面"
         subViews.detailLabel.text = "第一个页面子页面详情"

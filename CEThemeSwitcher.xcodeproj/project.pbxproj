@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F44311DB1E28AD9B00F53935 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DA1E28AD9B00F53935 /* ThemeProtocol.swift */; };
-		F44311DD1E28B07400F53935 /* Theme1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DC1E28B07400F53935 /* Theme1.swift */; };
-		F44311DF1E28B08500F53935 /* Theme2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DE1E28B08500F53935 /* Theme2.swift */; };
+		F44311DD1E28B07400F53935 /* WhiteTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DC1E28B07400F53935 /* WhiteTheme.swift */; };
+		F44311DF1E28B08500F53935 /* BlackTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311DE1E28B08500F53935 /* BlackTheme.swift */; };
 		F44311E21E28B79500F53935 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E11E28B79500F53935 /* TitleLabel.swift */; };
 		F44311E41E28B7B100F53935 /* DetailLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E31E28B7B100F53935 /* DetailLable.swift */; };
 		F44311E61E28B8F000F53935 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E51E28B8F000F53935 /* SubView.swift */; };
@@ -17,6 +17,10 @@
 		F44311EA1E28DCF700F53935 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E91E28DCF700F53935 /* SuperViewController.swift */; };
 		F44311EC1E28DD9C00F53935 /* SuperLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311EB1E28DD9C00F53935 /* SuperLabel.swift */; };
 		F44311EE1E2C647D00F53935 /* ThemeSwitcherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311ED1E2C647D00F53935 /* ThemeSwitcherCell.swift */; };
+		F44311F31E2C727D00F53935 /* BlueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311EF1E2C727D00F53935 /* BlueTheme.swift */; };
+		F44311F41E2C727D00F53935 /* GreenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311F01E2C727D00F53935 /* GreenTheme.swift */; };
+		F44311F51E2C727D00F53935 /* RedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311F11E2C727D00F53935 /* RedTheme.swift */; };
+		F44311F61E2C727D00F53935 /* YellowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311F21E2C727D00F53935 /* YellowTheme.swift */; };
 		F45328B41E2788A1006F7C68 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B31E2788A1006F7C68 /* FirstViewController.swift */; };
 		F45328B61E2788DC006F7C68 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B51E2788DC006F7C68 /* SecondViewController.swift */; };
 		F45328B81E2789B0006F7C68 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */; };
@@ -28,8 +32,8 @@
 
 /* Begin PBXFileReference section */
 		F44311DA1E28AD9B00F53935 /* ThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
-		F44311DC1E28B07400F53935 /* Theme1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme1.swift; sourceTree = "<group>"; };
-		F44311DE1E28B08500F53935 /* Theme2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme2.swift; sourceTree = "<group>"; };
+		F44311DC1E28B07400F53935 /* WhiteTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteTheme.swift; sourceTree = "<group>"; };
+		F44311DE1E28B08500F53935 /* BlackTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackTheme.swift; sourceTree = "<group>"; };
 		F44311E11E28B79500F53935 /* TitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		F44311E31E28B7B100F53935 /* DetailLable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailLable.swift; sourceTree = "<group>"; };
 		F44311E51E28B8F000F53935 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
@@ -37,6 +41,10 @@
 		F44311E91E28DCF700F53935 /* SuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		F44311EB1E28DD9C00F53935 /* SuperLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperLabel.swift; sourceTree = "<group>"; };
 		F44311ED1E2C647D00F53935 /* ThemeSwitcherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherCell.swift; sourceTree = "<group>"; };
+		F44311EF1E2C727D00F53935 /* BlueTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTheme.swift; sourceTree = "<group>"; };
+		F44311F01E2C727D00F53935 /* GreenTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenTheme.swift; sourceTree = "<group>"; };
+		F44311F11E2C727D00F53935 /* RedTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedTheme.swift; sourceTree = "<group>"; };
+		F44311F21E2C727D00F53935 /* YellowTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowTheme.swift; sourceTree = "<group>"; };
 		F45328B31E2788A1006F7C68 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F45328B51E2788DC006F7C68 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				F44311DA1E28AD9B00F53935 /* ThemeProtocol.swift */,
-				F44311DC1E28B07400F53935 /* Theme1.swift */,
-				F44311DE1E28B08500F53935 /* Theme2.swift */,
+				F44311DC1E28B07400F53935 /* WhiteTheme.swift */,
+				F44311DE1E28B08500F53935 /* BlackTheme.swift */,
+				F44311F01E2C727D00F53935 /* GreenTheme.swift */,
+				F44311F11E2C727D00F53935 /* RedTheme.swift */,
+				F44311F21E2C727D00F53935 /* YellowTheme.swift */,
+				F44311EF1E2C727D00F53935 /* BlueTheme.swift */,
 			);
 			name = Theme;
 			path = ThemeConfig;
@@ -207,12 +219,16 @@
 			files = (
 				F45328B41E2788A1006F7C68 /* FirstViewController.swift in Sources */,
 				F44311EA1E28DCF700F53935 /* SuperViewController.swift in Sources */,
-				F44311DD1E28B07400F53935 /* Theme1.swift in Sources */,
+				F44311DD1E28B07400F53935 /* WhiteTheme.swift in Sources */,
+				F44311F41E2C727D00F53935 /* GreenTheme.swift in Sources */,
 				F45328B81E2789B0006F7C68 /* MainTabBarViewController.swift in Sources */,
 				F44311E41E28B7B100F53935 /* DetailLable.swift in Sources */,
+				F44311F31E2C727D00F53935 /* BlueTheme.swift in Sources */,
+				F44311F61E2C727D00F53935 /* YellowTheme.swift in Sources */,
 				F45328BC1E279139006F7C68 /* ThemeManager.swift in Sources */,
 				F44311EC1E28DD9C00F53935 /* SuperLabel.swift in Sources */,
-				F44311DF1E28B08500F53935 /* Theme2.swift in Sources */,
+				F44311F51E2C727D00F53935 /* RedTheme.swift in Sources */,
+				F44311DF1E28B08500F53935 /* BlackTheme.swift in Sources */,
 				F44311DB1E28AD9B00F53935 /* ThemeProtocol.swift in Sources */,
 				F44311E21E28B79500F53935 /* TitleLabel.swift in Sources */,
 				F44311E81E28C71800F53935 /* FirstSubViewController.swift in Sources */,

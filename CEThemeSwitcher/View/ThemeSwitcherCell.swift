@@ -53,6 +53,25 @@ enum CellTitleType: Int {
             }
         }
     }
+    
+    var themeType : ThemeType {
+        get {
+            switch self {
+            case .White:
+                return .whiteTheme
+            case .Black:
+                return .blackTheme
+            case .Green:
+                return .greenTheme
+            case .Red:
+                return .redTheme
+            case .Yellow:
+                return .yellowTheme
+            case .Blue:
+                return .blueTheme
+            }
+        }
+    }
 
     
 }
@@ -62,6 +81,7 @@ class ThemeSwitcherCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
+        self.backgroundColor = UIColor.clear
         self.addAllSubviews()
     }
     
@@ -78,9 +98,15 @@ class ThemeSwitcherCell: UITableViewCell {
         guard let cellType: CellTitleType = CellTitleType(rawValue: index) else {
             return
         }
-        print(cellType.title)
+        if self.accessoryType == .checkmark {
+            self.switherTheme(type: cellType)
+        }
         customeView.titleLabel.text = cellType.title
         customeView.detailLabel.text = cellType.detail
+    }
+    
+    func switherTheme(type: CellTitleType) {
+        ThemeManager.switcherTheme(type: type.themeType)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

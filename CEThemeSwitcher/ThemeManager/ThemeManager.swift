@@ -8,16 +8,29 @@
 
 import UIKit
 enum ThemeType {
-    case THEME1
-    case THEME2
+    case whiteTheme
+    case blackTheme
+    case greenTheme
+    case redTheme
+    case yellowTheme
+    case blueTheme
     
     var theme: ThemeProtocol {
         get {
             switch self {
-            case .THEME1:
-                return Theme1()
-            case .THEME2:
-                return Theme2()
+            case .whiteTheme:
+                return WhiteTheme()
+            case .blackTheme:
+                return BlackTheme()
+            case .greenTheme:
+                return GreenTheme()
+            case .redTheme:
+                return RedTheme()
+            case .yellowTheme:
+                return YellowTheme()
+            case .blueTheme:
+                return BlueTheme()
+           
             }
         }
     }
@@ -42,7 +55,7 @@ class ThemeManager: NSObject {
             return theme.detailTextColor
         }
     }
-    var theme: ThemeProtocol = Theme1()     //默认是Theme1
+    var theme: ThemeProtocol = WhiteTheme()     //默认是WhiteTheme
     
     var notification: NSNotification!
     

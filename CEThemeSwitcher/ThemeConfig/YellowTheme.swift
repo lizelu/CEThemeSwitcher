@@ -7,16 +7,16 @@
 //
 
 import UIKit
-class Theme2: ThemeProtocol {
+class YellowTheme: ThemeProtocol {
     var backgroundColor: UIColor {
         get {
-            return UIColor.black
+            return UIColor.yellow
         }
     }
     
     var titleTextColor: UIColor {
         get {
-            return UIColor.white
+            return UIColor.red
         }
     }
     

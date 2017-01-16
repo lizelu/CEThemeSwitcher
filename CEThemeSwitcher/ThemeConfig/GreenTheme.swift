@@ -1,5 +1,5 @@
 //
-//  Theme1.swift
+//  Theme2.swift
 //  CEThemeSwitcher
 //
 //  Created by Mr.LuDashi on 2017/1/13.
@@ -7,22 +7,22 @@
 //
 
 import UIKit
-class Theme1: ThemeProtocol {
+class GreenTheme: ThemeProtocol {
     var backgroundColor: UIColor {
         get {
-            return UIColor.white
+            return UIColor.green
         }
     }
     
     var titleTextColor: UIColor {
         get {
-            return UIColor.black
+            return UIColor.brown
         }
     }
     
     var detailTextColor: UIColor {
         get {
-            return UIColor.darkGray
+            return UIColor.black
         }
     }
 }
