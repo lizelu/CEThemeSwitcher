@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// 主题类型枚举
+/// 主题类型枚举, 其中包含了一个简单工厂方法，用来创建Theme主题类的对象
 enum ThemeType {
     case whiteTheme
     case blackTheme

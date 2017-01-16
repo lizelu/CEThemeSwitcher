@@ -9,13 +9,7 @@
 import UIKit
 
 enum CellTitleType: Int {
-    case White = 0
-    case Black
-    case Green
-    case Red
-    case Yellow
-    case Blue
-    
+    case White, Black, Green, Red, Yellow, Blue
     var title : String {
         get {
             switch self {
@@ -34,7 +28,6 @@ enum CellTitleType: Int {
             }
         }
     }
-    
     var detail : String {
         get {
             switch self {
@@ -53,7 +46,6 @@ enum CellTitleType: Int {
             }
         }
     }
-    
     var themeType : ThemeType {
         get {
             switch self {
@@ -72,9 +64,8 @@ enum CellTitleType: Int {
             }
         }
     }
-
-    
 }
+
 class ThemeSwitcherCell: UITableViewCell {
     var customeView: SubView!
     

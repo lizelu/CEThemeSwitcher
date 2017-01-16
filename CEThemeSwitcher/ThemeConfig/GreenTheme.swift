@@ -10,7 +10,7 @@ import UIKit
 class GreenTheme: ThemeProtocol {
     var backgroundColor: UIColor {
         get {
-            return UIColor.green
+            return UIColor.colorWithHex(0xB3FFAA)
         }
     }
     

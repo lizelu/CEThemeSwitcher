@@ -10,7 +10,7 @@ import UIKit
 class RedTheme: ThemeProtocol {
     var backgroundColor: UIColor {
         get {
-            return UIColor.red
+            return UIColor.colorWithHex(0xD62608)
         }
     }
     

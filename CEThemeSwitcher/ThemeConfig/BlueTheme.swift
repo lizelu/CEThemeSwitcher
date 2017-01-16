@@ -10,19 +10,19 @@ import UIKit
 class BlueTheme: ThemeProtocol {
     var backgroundColor: UIColor {
         get {
-            return UIColor.blue
+            return UIColor.colorWithHex(0x44DDFF)
         }
     }
     
     var titleTextColor: UIColor {
         get {
-            return UIColor.white
+            return UIColor.black
         }
     }
     
     var detailTextColor: UIColor {
         get {
-            return UIColor.yellow
+            return UIColor.colorWithHex(0x8E8577)
         }
     }
 }
