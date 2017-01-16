@@ -24,18 +24,16 @@ class SubView: UIView {
     var titleLabel: TitleLabel!
     var detailLabel: DetailLable!
     
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubViews()
     }
     
     func addSubViews() {
-        self.titleLabel = TitleLabel(frame: CGRect(x: 10, y: 60, width: self.width, height: 20))
+        self.titleLabel = TitleLabel(frame: CGRect(x: 0, y: 0, width: self.width, height: 18))
         self.addSubview(self.titleLabel)
         
-        self.detailLabel = DetailLable(frame: CGRect(x: 10, y: 80, width: self.width, height:100))
+        self.detailLabel = DetailLable(frame: CGRect(x: 0, y: 20, width: self.width, height:15))
         self.addSubview(self.detailLabel)
         
     }
@@ -43,5 +41,6 @@ class SubView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
 
 }

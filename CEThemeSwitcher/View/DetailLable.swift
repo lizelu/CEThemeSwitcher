@@ -11,7 +11,7 @@ import UIKit
 class DetailLable: SuperLabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.font = UIFont.boldSystemFont(ofSize: 16)
+        self.font = UIFont.boldSystemFont(ofSize: 12)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -21,4 +21,6 @@ class DetailLable: SuperLabel {
     override func themeTextColor(theme:ThemeProtocol) -> UIColor {
         return theme.detailTextColor
     }
+    
+    
 }

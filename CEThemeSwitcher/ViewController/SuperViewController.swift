@@ -26,14 +26,16 @@ class SuperViewController: UIViewController {
         }
         self.view.backgroundColor = theme.backgroundColor
     }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-        print("释放")
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        print("释放")
+    }
+    
+    
 }

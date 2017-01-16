@@ -14,7 +14,7 @@ class SecondViewController: SuperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let subViews = SubView(frame: CGRect(x: 30, y: 50, width: 200, height: 100))
+        let subViews = SubView(frame: CGRect(x: 80, y: 80, width: 200, height: 50))
         subViews.titleLabel.text = "第二个页面"
         subViews.detailLabel.text = "第二个页面详情"
         self.view.addSubview(subViews)

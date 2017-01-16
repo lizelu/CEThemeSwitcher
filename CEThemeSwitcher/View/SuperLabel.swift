@@ -20,7 +20,9 @@ class SuperLabel: UILabel {
     }
     
     func changeTheme() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handelNotification(notification:)), name: ThemeNotifacationName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handelNotification(notification:)),
+                                               name: ThemeNotifacationName,
+                                               object: nil)
         ThemeManager.themeUpdate()
     }
     
