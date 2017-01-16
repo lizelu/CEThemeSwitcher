@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+/// 主题类型枚举
 enum ThemeType {
     case whiteTheme
     case blackTheme
@@ -15,6 +17,7 @@ enum ThemeType {
     case yellowTheme
     case blueTheme
     
+    /// 主题类型所对应的主题对象
     var theme: ThemeProtocol {
         get {
             switch self {
@@ -35,31 +38,14 @@ enum ThemeType {
         }
     }
 }
+
 let ThemeNotifacationName = NSNotification.Name("keyThemeNotifacation")
 
 class ThemeManager: NSObject {
-    var backgroundColor: UIColor {
-        get {
-            return theme.backgroundColor
-        }
-    }
-    
-    var titleTextColor: UIColor {
-        get {
-            return theme.titleTextColor
-        }
-    }
-    
-    var detailTextColor: UIColor {
-        get {
-            return theme.detailTextColor
-        }
-    }
+    /// 当前使用的主题
     var theme: ThemeProtocol = WhiteTheme()     //默认是WhiteTheme
     
-    var notification: NSNotification!
-    
-    
+    /// ThemeManager的单例
     static var manager: ThemeManager? = nil
     static func shareInstance() -> ThemeManager {
         if manager == nil {
@@ -67,19 +53,29 @@ class ThemeManager: NSObject {
         }
         return manager!
     }
-    private override init() {
-    }
     
-    private func switcherTheme(type: ThemeType){
-        self.theme = type.theme
-        NotificationCenter.default.post(name: ThemeNotifacationName, object: self.theme)
-    }
-    
+    // MARK: - 便利方法
+    /// 切换主题的便利方法
+    ///
+    /// - Parameter type: 要切换主题的枚举类型
     static func switcherTheme(type: ThemeType){
         ThemeManager.shareInstance().switcherTheme(type: type)
     }
     
+    /// 更新主题的便利方法
     static func themeUpdate() {
         NotificationCenter.default.post(name: ThemeNotifacationName, object: ThemeManager.shareInstance().theme)
+    }
+
+    //MARK: - Private Method
+    /// ThemeManager的私有构造器
+    private override init() {}
+    
+    /// 切换主题的方法
+    ///
+    /// - Parameter type: 要切换主题的枚举类型
+    private func switcherTheme(type: ThemeType){
+        self.theme = type.theme
+        NotificationCenter.default.post(name: ThemeNotifacationName, object: self.theme)
     }
 }

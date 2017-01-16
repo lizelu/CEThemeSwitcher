@@ -24,6 +24,7 @@ class SecondViewController: SuperViewController, UITableViewDelegate, UITableVie
         self.tableView = UITableView(frame: self.view.bounds)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.tableFooterView = UIView()
         self.tableView.register(ThemeSwitcherCell.self, forCellReuseIdentifier: self.cellReuseIdentifier)
         self.view.addSubview(self.tableView)
     }
@@ -40,8 +41,6 @@ class SecondViewController: SuperViewController, UITableViewDelegate, UITableVie
             self.tableView.backgroundColor = theme.backgroundColor
         }
     }
-
-    
     
     //MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+/// 主题协议，所有的主题要遵循该协议
 protocol ThemeProtocol {
     var backgroundColor: UIColor {get}
     var titleTextColor: UIColor {get}
