@@ -16,6 +16,7 @@
 		F44311E81E28C71800F53935 /* FirstSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E71E28C71800F53935 /* FirstSubViewController.swift */; };
 		F44311EA1E28DCF700F53935 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311E91E28DCF700F53935 /* SuperViewController.swift */; };
 		F44311EC1E28DD9C00F53935 /* SuperLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311EB1E28DD9C00F53935 /* SuperLabel.swift */; };
+		F44311EE1E2C647D00F53935 /* ThemeSwitcherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44311ED1E2C647D00F53935 /* ThemeSwitcherCell.swift */; };
 		F45328B41E2788A1006F7C68 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B31E2788A1006F7C68 /* FirstViewController.swift */; };
 		F45328B61E2788DC006F7C68 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B51E2788DC006F7C68 /* SecondViewController.swift */; };
 		F45328B81E2789B0006F7C68 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */; };
@@ -35,6 +36,7 @@
 		F44311E71E28C71800F53935 /* FirstSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSubViewController.swift; sourceTree = "<group>"; };
 		F44311E91E28DCF700F53935 /* SuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		F44311EB1E28DD9C00F53935 /* SuperLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperLabel.swift; sourceTree = "<group>"; };
+		F44311ED1E2C647D00F53935 /* ThemeSwitcherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherCell.swift; sourceTree = "<group>"; };
 		F45328B31E2788A1006F7C68 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F45328B51E2788DC006F7C68 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F45328B71E2789B0006F7C68 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				F44311E11E28B79500F53935 /* TitleLabel.swift */,
 				F44311E31E28B7B100F53935 /* DetailLable.swift */,
 				F44311E51E28B8F000F53935 /* SubView.swift */,
+				F44311ED1E2C647D00F53935 /* ThemeSwitcherCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				F44311E81E28C71800F53935 /* FirstSubViewController.swift in Sources */,
 				F47004A71E27833000EB5AA5 /* AppDelegate.swift in Sources */,
 				F44311E61E28B8F000F53935 /* SubView.swift in Sources */,
+				F44311EE1E2C647D00F53935 /* ThemeSwitcherCell.swift in Sources */,
 				F45328B61E2788DC006F7C68 /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,23 +8,63 @@
 
 import UIKit
 
-class SecondViewController: SuperViewController {
-    
+class SecondViewController: SuperViewController, UITableViewDelegate, UITableViewDataSource {
+    let cellReuseIdentifier: String = "ThemeSwitcherCell"
     var switcher: UISwitch!
+    var tableView: UITableView!
+    var selectIndexRow: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let subViews = SubView(frame: CGRect(x: 80, y: 80, width: 200, height: 50))
-        subViews.titleLabel.text = "第二个页面"
-        subViews.detailLabel.text = "第二个页面详情"
-        self.view.addSubview(subViews)
-        
-        self.switcher = UISwitch(frame: CGRect(x: 30, y: 300, width: 50, height:50))
-        self.switcher.isOn = true
-        self.switcher.addTarget(self, action: #selector(tapSwicher(switcher:)), for: .valueChanged)
-        self.view.addSubview(self.switcher)
-        
+        self.addTableVew()
     }
+    
+    func addTableVew() {
+        self.tableView = UITableView(frame: self.view.bounds)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(ThemeSwitcherCell.self, forCellReuseIdentifier: self.cellReuseIdentifier)
+        self.view.addSubview(self.tableView)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    //MARK: - UITableViewDataSource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: ThemeSwitcherCell? = tableView.dequeueReusableCell(withIdentifier: self.cellReuseIdentifier) as? ThemeSwitcherCell
+        if cell == nil {
+            cell = ThemeSwitcherCell(style: .default, reuseIdentifier: self.cellReuseIdentifier)
+        }
+        
+        if indexPath.row == self.selectIndexRow {
+            cell?.accessoryType = .checkmark
+        } else {
+            cell?.accessoryType = .none
+        }
+        
+        cell!.configCell(index: indexPath.row)
+        return cell!
+    }
+    
+    //MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectIndexRow = indexPath.row
+        self.tableView.reloadData()
+    }
+    
     
     func tapSwicher(switcher: UISwitch) {
         if switcher.isOn {
@@ -34,9 +74,5 @@ class SecondViewController: SuperViewController {
         }
     }
 
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
 }
