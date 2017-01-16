@@ -135,10 +135,10 @@
 			children = (
 				F44311E01E28B77300F53935 /* View */,
 				F45328B21E2788A1006F7C68 /* ViewController */,
-				F45328B01E27869B006F7C68 /* Theme */,
 				F45328B11E27869B006F7C68 /* ThemeManager */,
-				F47004A61E27833000EB5AA5 /* AppDelegate.swift */,
+				F45328B01E27869B006F7C68 /* Theme */,
 				F47004AD1E27833000EB5AA5 /* Assets.xcassets */,
+				F47004A61E27833000EB5AA5 /* AppDelegate.swift */,
 				F47004AF1E27833000EB5AA5 /* LaunchScreen.storyboard */,
 				F47004B21E27833000EB5AA5 /* Info.plist */,
 			);

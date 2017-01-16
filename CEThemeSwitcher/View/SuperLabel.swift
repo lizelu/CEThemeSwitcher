@@ -11,7 +11,6 @@ import UIKit
 class SuperLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.font = UIFont.boldSystemFont(ofSize: 20)
         self.changeTheme()
     }
     
