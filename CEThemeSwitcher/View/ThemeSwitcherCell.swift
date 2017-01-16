@@ -89,11 +89,12 @@ class ThemeSwitcherCell: UITableViewCell {
         guard let cellType: CellTitleType = CellTitleType(rawValue: index) else {
             return
         }
+        customeView.titleLabel.text = cellType.title
+        customeView.detailLabel.text = cellType.detail
+        
         if self.accessoryType == .checkmark {
             self.switherTheme(type: cellType)
         }
-        customeView.titleLabel.text = cellType.title
-        customeView.detailLabel.text = cellType.detail
     }
     
     func switherTheme(type: CellTitleType) {

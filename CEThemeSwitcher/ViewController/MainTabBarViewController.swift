@@ -13,10 +13,10 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let nav1 = UINavigationController(rootViewController: FirstViewController())
-        nav1.tabBarItem = createItemBar(title: "first", tag: 0)
+        nav1.tabBarItem = createItemBar(title: "首页", tag: 0)
         
         let nav2 = UINavigationController(rootViewController: SecondViewController())
-        nav2.tabBarItem = createItemBar(title: "second", tag: 0)
+        nav2.tabBarItem = createItemBar(title: "选择主题", tag: 0)
         self.setViewControllers([nav1, nav2], animated: true)
     }
     
