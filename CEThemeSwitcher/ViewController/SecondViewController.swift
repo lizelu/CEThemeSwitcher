@@ -53,6 +53,7 @@ class SecondViewController: SuperViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: ThemeSwitcherCell? = tableView.dequeueReusableCell(withIdentifier: self.cellReuseIdentifier) as? ThemeSwitcherCell
+        
         if cell == nil {
             cell = ThemeSwitcherCell(style: .default, reuseIdentifier: self.cellReuseIdentifier)
         }
