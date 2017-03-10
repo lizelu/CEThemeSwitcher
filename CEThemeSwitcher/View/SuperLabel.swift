@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SuperLabel: UILabel {
+class SuperLabel: UILabel, ThemeManagerProtocol {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.changeTheme()

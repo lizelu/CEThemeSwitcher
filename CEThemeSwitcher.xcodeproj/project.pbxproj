@@ -29,6 +29,7 @@
 		F47004AE1E27833000EB5AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47004AD1E27833000EB5AA5 /* Assets.xcassets */; };
 		F47004B11E27833000EB5AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47004AF1E27833000EB5AA5 /* LaunchScreen.storyboard */; };
 		F482F0C21E2CB3B700FA8759 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F482F0C11E2CB3B700FA8759 /* UIColorExtension.swift */; };
+		F4AF613E1E72488400A25CB1 /* ThemeManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF613D1E72488400A25CB1 /* ThemeManagerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F47004B01E27833000EB5AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47004B21E27833000EB5AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F482F0C11E2CB3B700FA8759 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F4AF613D1E72488400A25CB1 /* ThemeManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManagerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				F45328BB1E279139006F7C68 /* ThemeManager.swift */,
+				F4AF613D1E72488400A25CB1 /* ThemeManagerProtocol.swift */,
 			);
 			path = ThemeManager;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				F44311E61E28B8F000F53935 /* SubView.swift in Sources */,
 				F44311EE1E2C647D00F53935 /* ThemeSwitcherCell.swift in Sources */,
 				F45328B61E2788DC006F7C68 /* SecondViewController.swift in Sources */,
+				F4AF613E1E72488400A25CB1 /* ThemeManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

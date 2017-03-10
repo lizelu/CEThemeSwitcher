@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SuperViewController: UIViewController {
+class SuperViewController: UIViewController, ThemeManagerProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
